@@ -1,64 +1,190 @@
 {
-  "name": "LionXZ",
-  "description": "A simple Telegram userbot based on Telethon ",
-  "logo": "https://telegra.ph/file/91282faec32f3e122e8a4.jpg",
+  "name": "𝕿𝖞𝖘𝖔𝖓ẞø†",
+  "description": "Tнє ßєѕτ υѕєяϐοτ мα∂є ϐγ @TysonOwner. Made with Python Language With Hardwork... ❤ ",
+  "logo": "https://telegra.ph/file/de24e28880db293073f21.jpg",
   "keywords": [
+    "telegram",
+    "userbot",
     "plugin",
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/MdNoor786/LionX/",
-  "website": "#TODO",
-  "success_url": "https://t.me/LionXsupport",
+  "repository": "https://github.com/THE-TYSON/TYSON-USERBOT/",
+  "website": "https://github.com/THE-TYSON/TYSON-USERBOT/",
+  "success_url": "https://t.me/TysonUB",
   "env": {
+    "ENV": {
+      "description": "Set this to ANYTHING will enable heroku.",
+      "value": "ANYTHING"
+    },
     "ALIVE_NAME": {
-      "description": "give your name",
-      "value": "ⱠłØ₦-Ⱬ Ʉѕєя"
+      "description": "Fill your Full name. By default it is 『𝕿𝖞𝖘𝖔𝖓』 User",
+      "value": "『𝕿𝖞𝖘𝖔𝖓ẞøY』",
+      "required": false
+    },
+    "ALIVE_MSG": {
+      "description": "Set Custom Alive Message When entering .alive Or .royal  Command.",
+      "value": "𝕿𝖞𝖘𝖔𝖓ẞø†  is AliVe",
+      "required": false
+    },
+    "ABUSE": {
+      "description": " Set ON or OFF",
+      "value": "ON",
+      "required" :true
+    },
+    "EXTRA_PLUGIN": {
+      "description": "Set ON or OFF",
+      "value": "ON",
+      "required" :true
+    },
+    "SPAM": {
+      "description": "Set ON or OFF",
+      "value": "ON",
+      "required" :true
+    },
+    "ASSISTANT": {
+      "description": "Set ON or OFF",
+      "value": "ON",
+      "required" :true
+    },
+    "YOUR_GROUP": {
+      "description": "Set Ur Group Username",
+      "value": "@TysonUB",
+      "required": false
+    },
+    "YOUR_CHANNEL": {
+      "description": "Set Ur Channel Username",
+      "value": "@TysonUB",
+      "required": false
+    },
+    "BOY_OR_GIRL": {
+      "description": "Set Boy Or Girl",
+      "value": "Boy",
+      "required": false
+    },
+    "AWAKE_PIC": {
+      "description": "Put here any telegraph media link for awake pic in .awake Or .bot command.",
+      "value": "",
+      "required": false
+    },
+    "OP_PIC": {
+      "description": "Put here any telegraph media link for OP pic in .op command.",
+      "value": "",
+      "required": false
+    },
+    "PING_PIC": {
+      "description": "Put here any telegraph media link for PING pic in .ping command.",
+      "value": "",
+      "required": false
+    },
+    "ALIVE_PIC": {
+      "description": "Put here any telegraph media link for alive pic in .alive.",
+      "value": "",
+      "required": false
+    },
+    "ALIVE_EMOJI": {
+      "description": "Put here any emoji. Which Will be Show When U Do .alive.",
+      "value": "",
+      "required": false
+    },
+    "BIO_MSG": {
+      "description": "Put Your Telegram Bio Here Required For Auto Bio.",
+      "value": "𝙸 𝚊𝚖 𝙻𝚎𝚐𝚎𝚗𝚍 Becouse I am Using TYSONBOT.",
+      "required": true
+    },
+    "PM_PIC": {
+      "description": "put here any telegraph media link for custom pmpermit pic.",
+      "value": "",
+      "required": false
+    },
+    "PM_MSG": {
+      "description": "Enter Your custom pm permit msg.",
+      "value": "Hello Sir\nPlease Dont Try To Spam Here Else Get Blocked By Assistant Of My Master",
+      "required": false
+    },
+    "MAX_FLOOD_IN_PM": {
+      "description": "Now U Can Set Custom Flood In DM / PM by default it is 5",
+      "value": "5",
+      "required": true
+    },
+    "LOGGER_ID": {
+      "description": "Create a private channel. And get it's id from @missrose_bot and paste here. Value should start with -100",
+      "value": "",
+      "required": true
     },
     "APP_ID": {
-      "description": "Get this value from my.telegram.org! Please do not steal",
+      "description": "Get this value from my.telegram.org! Putting Others Value may result In Account Ban.",
       "value": ""
     },
-    "API_HASH": {
-      "description": "Get this value from my.telegram.org! Please do not steal",
-      "value": ""
+    "SUDO_USERS": {
+      "description": "Enter your friends user id to to give him bot full access",
+      "value": "",
+      "required": false
     },
-    "STRING_SESSION": {
-      "description": "Get this value by running python3 telesetup.py locally oorhttps://replit.com/@simpleboy786/Lion-X?v=1",
-      "value": ""
-    },
-    "TG_BOT_USERNAME": {
-      "description": "Needed for inline buttons maker. Make a bot at http://telegram.dog/BotFather and get the username of your bot",
-      "value": ""
-    },
-    "TG_BOT_TOKEN": {
-      "description": "Needed for inline buttons maker. Make a bot at http://telegram.dog/BotFather and get the token of your bot.Worth it. Get it.",
-      "value": ""
+    "SUDO_COMMAND_HAND_LER": {
+      "description": "Please enter sudo user command handler",
+      "value": ",",
+      "required": false
     },
     "COMMAND_HAND_LER": {
-      "description": "Set this one with only one the symbol to use it before your command to run like . , ' `",
+      "description": "U can Change Ur command Handler By Default it is (.)",
       "value": ".",
-      "required": false
+      "required": true
+      },
+    "API_HASH": {
+      "description": "Get this value from my.telegram.org! Putting Others Value May result In Account Ban.",
+      "value": ""
     },
-    "ENV": {
-      "description": "Setting this to ANYTHING will enable heroku.",
-      "value": "ANYTHING",
-      "required": false
+    "PLUGIN_CHANNEL": {
+      "description": "Copy Group Id And paste here To Get Plugin Channel ID copy and paste here",
+      "value": ""
+    }, 
+    "ROYAL_STRING": {
+      "description": "Get this value by running https://replit.com/@Tyson-14/TysonSESSION?v=1 ",
+      "value": ""
     },
     "HEROKU_API_KEY": {
-      "description": "Required for updating the bot and other stuff get it from https://dashboard.heroku.com/account",
+      "description": "Go to https://dashboard.heroku.com/account, scroll down and press Reveal API.Required for updater to work.",
       "value": "",
-      "required": false
+      "required": true
     },
     "HEROKU_APP_NAME": {
-      "description": "YOUR app name ",
+      "description": "The Value of App Name you filled in right on top.Required for updater to work.",
+      "value": "",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Needed for inline buttons maker. Make a bot at [BotFather](http://telegram.dog/BotFather) and get the token of your bot. And Don't Forget To Turn on inline Mode on bot settings. Get it.",
+      "value": ""
+    },
+    "BOT_USERNAME": {
+      "description": "Needed for inline buttons maker. Make a bot at @BotFather and copy the username of your bot.",
+      "value": ""
+    },
+    "NO_OF_BUTTONS": {
+      "description": " Set The Amount Of Buttons Displayed In royal Command default 7",
+      "value": "7",
+      "required": true
+    },
+    "NO_OF_COLUMNS": {
+      "description": "Set The Amount Of Rows You Want To Displayed In royal Command default 2",
+      "value": "2",
+      "required": true
+    },
+    "EMOJI_IN_HELP1": {
+      "description": "Set The emojies You Want to Add In Help Command!!",
       "value": "",
       "required": false
     },
-    "TZ": {
-      "description": "Required for Correct Time on autopic/get time. Know your timezone from http://www.timezoneconverter.com/cgi-bin/findzone.tzc",
-      "value": "Asia/Kolkata",
+    "EMOJI_IN_HELP2": {
+      "description": "Set The emojies You Want to Add In Help Command!!",
+      "value": "",
       "required": false
+    },
+    "PM_DATA": {
+      "description": "Type DISABLE if you want to disable pm protection... ",
+      "value": "ENABLE",
+      "required": true
     }
   },
   "addons": [{
@@ -77,8 +203,9 @@
     "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
   },{
     "url": "https://github.com/heroku/heroku-buildpack-apt.git"
-  },{
+},{
     "url": "https://github.com/chrismytton/heroku-buildpack-jq"
+
   },{
     "url": "heroku/python"
   }]
