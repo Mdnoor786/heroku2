@@ -28,7 +28,7 @@ covid
 cryptg
 colorama>=0.4.3
 cachetools==4.1.1
-cffi==1.14.4
+cffi==1.15.0
 click==7.1.2
 Command==0.1.0
 cryptography==3.2.1
