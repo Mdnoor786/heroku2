@@ -3,7 +3,7 @@ asyncurban
 aiohttp
 aiofiles
 a-pytube-fork-for-spotdl-users==9.6.4
-antispaminc==3.8
+antispaminc==4.0
 apiclient==1.0.4
 apscheduler
 aria2p
